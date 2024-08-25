@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-3</title>
+    <!-- tailwind and daisyUI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                btncolor:'rgb(171, 239, 95)',
+                btncolor2:'rgba(171, 239, 95, 0.5)',
+                
+              }
+              
+            }
+            }
+            
+          }
+        
+      </script>
+    <!-- google font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- font awesome CDN -->
+    <script src="https://kit.fontawesome.com/352b51d8e3.js" crossorigin="anonymous"></script>
+    <style>
+      #header-bg{
+        background: linear-gradient(0.00deg, rgb(255, 255, 255),rgba(255, 255, 255, 0) 100%);
+      }
+    </style>
+</head>
+<body>
+    <header class="md:container mx-auto " id="header-bg">
+        <!-- navbar section starts here -->
+        <nav class="bg-slate-200">
+            <div class="navbar">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M4 6h16M4 12h8m-8 6h16" />
+                      </svg>
+                    </div>
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                      <li><a>Home</a></li>
+                      <li><a>Services</a></li>
+                      <li><a>Portfolio</a></li>
+                      <li><a>Blogs</a></li>
+                      <li><a>Contact Us</a></li>
+                    </ul>
+                  </div class="flex justify-evenly navbar-start">
+                  
+                    <h6 class="rounded-full p-1 bg-btncolor"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                    </svg>
+                  </h6>
+                    <a class="text-xl lg:text-3xl font-extrabold ml-2">Rinterio</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1 font-semibold text-base text-gray-400">
+                      <li class="font-bold text-black"><a>Home</a></li>
+                      <li><a>Services</a></li>
+                      <li><a>Portfolio</a></li>
+                      <li><a>Blogs</a></li>
+                      <li><a>Contact Us</a></>
+                   
+                  </ul>
+                </div>
+                <div class="navbar-end hidden lg:flex gap-3  md:flex ">
+                  <button class=" w-7 h-7 bg-white rounded-full"><i class="fa-solid fa-magnifying-glass"></i> </button>
+                  <button class="w-7 h-7 bg-white rounded-full">
+                    <svg class="w-5 ml-[3px]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                  </svg>
+                </button>
+                  
+                    <a class="rounded-full btn hover:bg-btncolor border-none bg-btncolor text-[17px] font-bold">Book Consult 
+                      <h6 class= "bg-black rounded-full text-white p-1" ><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                      </svg></h6>
+                    </a>
+                </div>
+              </div>
+        </nav>
+        <!-- navbar section ends here -->
+         <section>
+          <div class="hero border border-red-600 mt-9 md:mt-14">
+            <div class="hero-content text-center flex items-center justify-center flex-col">
+              <div>
+                <img src="./Images/banner.png" alt="">
+              </div>
+              <div class="w-auto md:max-w-5xl">
+                <h1 class="text-4xl md:text-6xl font-extrabold">A barn house of this design has a striking appearance</h1>
+                <p class="md:w-[90%] md:ml-10 text-center py-6 opacity-80 ">
+                  The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.
+                </p>
+                <button>
+                  <a class="w-[280px] md:w-[190px] md:h-[50px] rounded-full btn hover:bg-btncolor2 border border-[#ABEF5F] bg-btncolor2 text-[15px] font-medium">View Details 
+                    <h6 class="rounded-full p-1 bg-btncolor"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                    </svg>
+                  </h6>
+                  </a>
+                </button>
+              </div>
+            </div>
+          </div>
+         </section>
+    </header>
+
+    <main></main>
+
+    <footer></footer>
+</body>
+</html>
