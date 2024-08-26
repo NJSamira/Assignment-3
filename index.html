@@ -20,6 +20,9 @@
               btncolor2: 'rgba(171, 239, 95, 0.5)',
               btncolor3: 'rgb(255, 255, 255)',
             },
+            backgroundImage: {
+              'header-bg': 'linear-gradient(0deg, rgb(255, 255, 255), rgba(255, 255, 255, 0) 100%)',
+            },
             fontFamily: {
               Manrope: ['Manrope', 'sans-serif'],
             },
@@ -32,9 +35,9 @@
 
 </head>
 <body class=" font-Manrope">
-    <header class="md:container mx-auto">
+    <header class="md:container mx-auto bg-gradient-to-t from-[#FFFFFF] to-[#eee8e8]">
         <!-- navbar section starts here -->
-        <nav class="bg-slate-200">
+        <nav>
             <div class="navbar">
                 <div class="navbar-start">
                   <div class="dropdown">
@@ -70,7 +73,7 @@
                     <a class="text-xl lg:text-3xl font-extrabold ml-2">Rinterio</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
-                  <ul class="menu menu-horizontal px-1 font-semibold text-base text-gray-400">
+                  <ul class="menu menu-horizontal px-1 font-semibold text-base text-[#737373]">
                       <li class="font-bold text-black"><a>Home</a></li>
                       <li><a>Services</a></li>
                       <li><a>Portfolio</a></li>
@@ -79,13 +82,15 @@
                    
                   </ul>
                 </div>
-                <div class="navbar-end hidden lg:flex gap-3  md:flex ">
-                  <button class=" w-7 h-7 bg-white rounded-full"><i class="fa-solid fa-magnifying-glass"></i> </button>
-                  <button class="w-7 h-7 bg-white rounded-full">
-                    <svg class="w-5 ml-[3px]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">
+                <div class="navbar-end hidden lg:ml-24 lg:flex lg:gap-3 xl:gap-0 md:flex ">
+                  <div class="flex justify-center items-center xl:w-[30%] h-[50%] gap-4">
+                    <button class=" w-8 h-7 lg:h-8 bg-white rounded-full"><i class="fa-solid fa-magnifying-glass"></i> </button>
+                  <button class="w-9 h-8 xl:pl-2 pl-2 bg-white rounded-full">
+                    <svg class="w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
                   </svg>
                 </button>
+                  </div>
                   
                     <a class="rounded-full btn hover:bg-btncolor border-none bg-btncolor text-[17px] font-bold">Book Consult 
                       <h6 class= "bg-black rounded-full text-white p-1" ><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
@@ -247,7 +252,7 @@
       </section>
 
       <!-- Let’s Connect section starts here -->
-      <section class="container mx-auto h-[100%] md:h-[740px] bg-[url('/Images/bg.jpg')]  bg-cover bg-no-repeat mt-2 md:pt-24 pb-3 md:pb-0 pt-5 py-3 md:py-6 mb-10">
+      <section class="container mx-auto h-[100%] md:h-[720px] bg-[url('/Images/bg.jpg')]  bg-cover bg-no-repeat mt-2 md:pt-24 pb-3 md:pb-0 pt-5 py-3 md:py-6 mb-3">
         <div class="flex flex-col items-center text-center mb-4 md:mb-1">
           <a class="w-[140px] h-4 rounded-full btn min-h-7 hover:bg-btncolor3 border-none bg-[#ABEF5F33] text-[12px] font-bold"> 
             <i class="fa-solid fa-arrow-right"></i>
@@ -265,7 +270,7 @@
           <textarea class="textarea w-[100%] md:w-[100%] text-[14px] rounded-2xl h-32 col-span-2" placeholder="Write your message here"></textarea> 
 
           <a class="rounded-full w-[100%] md:w-[100%] col-span-2 py-3 btn hover:bg-btncolor border-none bg-btncolor md:text-[17px] text-[15px] font-bold">Send Mail 
-            <h6 class= "bg-black rounded-full text-white p-1" ><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
+            <h6 class= "bg-black rounded-full text-white p-1" ><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-3.5">
             <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
             </svg></h6>
           </a>
@@ -274,9 +279,49 @@
       </section>
     </main>
 
-    <footer>
+    <!-- footer section starts here -->
+    <footer class="bg-[#1C1C1C] lg:h-[380px] lg:py-[55px] py-[40px] h-[450px]">
       <section>
+        <div class="flex flex-col items-center justify-center md:space-y-8 space-y-3 ">
+          <div class="flex flex-row items-center justify-center">
+            <div>
+              <h6 class="w-7 h-7 rounded-full p-1 bg-btncolor"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+              </svg>
+            </h6>
+            </div>
+            <div>
+              <a class="text-xl lg:text-3xl text-[#E9E9E9] font-extrabold ml-1"> Rinterio</a>
+            </div>
+          </div>
+          
+            <p class="md:w-2/4 w-[290px] text-center md:text-[15px] text-[13px] text-[#E9E9E9] md:text-base md:py-2 py-2 opacity-70 ">
+              The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.
+            </p> 
+          
+        
+  
+          <div>
+            <ul class=" px-1 font-[500] text-[14px] text-[#E9E9E9] md:space-x-14 grid grid-cols-1 lg:grid lg:grid-cols-5 text-center space-y-4 mb-4 md:mb-0 md:space-y-0">
+              <li><a>Home</a></li>
+                <li><a>Services</a></li>
+                <li><a>Portfolio</a></li>
+                <li><a>Blogs</a></li>
+                <li><a>Contact Us</a></>
+             
+            </ul>
+          </div>
+  
+         
+          
+            <a class="rounded-full w-[80%] md:w-[20%]  col-span-2 py-3 btn hover:bg-btncolor border-none bg-btncolor md:text-[15px] text-[15px] font-bold"> Book Consult
+              <h6 class= "bg-black rounded-full text-white p-1" ><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-3.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+              </svg></h6>
+            </a>
+          
 
+        </div>
       </section>
     </footer>
 </body>
